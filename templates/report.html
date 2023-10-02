@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report Page</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            color: #333;
+            background-color: #3498db;
+            padding: 20px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            padding: 20px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        li strong {
+            margin-right: 10px;
+            color: #333;
+        }
+
+        #downloadButton {
+            display: inline-block;
+            margin: 10px auto;
+            padding: 5px 10px;
+            background-color: #2ecc71;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Report Page</h1>
+
+    <ul>
+        <li><strong>Water body name:</strong> {{ report_data.name }}</li>
+        <li><strong>Date:</strong> {{ report_data.date }}</li>
+        <li><strong>Chlorophyll:</strong> {{ report_data.chlorophyll }} unit</li>
+        <li><strong>Turbidity:</strong> {{ report_data.turbidity }} unit</li>
+        <li><strong>Nitrogen:</strong> {{ report_data.nitrogen }} unit</li>
+        <!-- Add more data fields as needed -->
+    </ul>
+
+    <div style="text-align: center;">
+        <a id="downloadButton" href="/download">Download Report</a>
+    </div>
+
+</body>
+</html>
