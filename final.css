@@ -173,7 +173,7 @@ header .logo {
 
 .bubbles img {
     width: 50px;
-    animation: bubble 7s linear infinite;
+    animation: bubble 6s linear infinite;
 }
 
 .bubbles {
@@ -200,7 +200,7 @@ header .logo {
     }
 
     100% {
-        transform: translateY(-80vh);
+        transform: translateY(-60vh);
         opacity: 0;
     }
 }
