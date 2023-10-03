@@ -36,7 +36,7 @@ header .logo {
     text-transform: uppercase;
     cursor: pointer;
     /* padding-top: 275px; */
-    padding-left: 550px;
+    padding-left: 563px;
 }
 
 .form-body{
@@ -76,7 +76,7 @@ header .logo {
 .text {
     position: relative;
     z-index: 10;
-    margin-left: 625px;
+    margin-left: 660px;
     margin-top: 110px;
 }
 
@@ -177,7 +177,7 @@ header .logo {
 
 .align-btn{
     padding-top: 2%;
-    padding-left: 5%;
+    padding-left: 3%;
 }
 
 .text button:hover {
