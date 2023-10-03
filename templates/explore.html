@@ -4,23 +4,71 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{url_for('static',filename='explore.css')}}">
+    <!-- <link rel="stylesheet" href="explore.css"> -->
   
     <title>Upload TIFF File</title>
 </head>
 <body>
 
-<div class="test">
-    <header>
+    <section class="showcase">
+
+
+        <div class="test">
+            <div class="innner-body">
+
+            <header>
+                <h2 class="logo">Upload image</h2>
+            </header>
+          <div class="overlay"></div>
+          <div class="text">
+            <!-- <div class="form-body"> -->
+            <form action="/process" method="post" enctype="multipart/form-data">
+                <input class="choose"  type="file" name="ftif" accept=".tif, .tiff" required>
+                <div class="align-btn">
+                <button type="submit">Process</button>
+                </div>
+            </form>
+            </div>
+            <!-- <h2>Get to know </h2>
+            <h3>about the</h3>
+            <h3>WATER QUALITY</h3>
+            <p>We detect water quality based on various parameters like Chlorophyll,
+              Turbidity, TSS</p> -->
+            <!-- <button type="button">Explore</button> -->
+            <!-- <a href="google.com">Explore</a> -->
+          </div>
+
+        </div>
+    
+    
+          <!-- <div class="bubbles">
+            <img src="images/bubble.png" alt="">
+            <img src="images/bubble.png" alt="">
+            <img src="images/bubble.png" alt="">
+            <img src="images/bubble.png" alt="">
+            <img src="images/bubble.png" alt="">
+            <img src="images/bubble.png" alt="">
+            <img src="images/bubble.png" alt="">
+          </div> -->
+        </div>
+      </section>
+    
+
+<!-- <div class="test"> -->
+    <!-- <header>
         <h2 class="logo">Upload image</h2>
-    </header>
+    </header> -->
+    <!-- <div class="overlay"></div> -->
+
 
 <!-- Add your form for uploading TIFF file -->
-<div class="test" >
+<!-- <div class="test" >
     <form action="/process" method="post" enctype="multipart/form-data">
         <input type="file" name="ftif" accept=".tif, .tiff" required>
         <button type="submit">Process</button>
     </form>
-</div>
+
+</div> -->
 
 </body>
 </html>
